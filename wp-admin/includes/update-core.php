@@ -714,7 +714,7 @@ $_old_files = array(
 	// 4.8
 	'wp-includes/js/tinymce/plugins/wpembed',
 	'wp-includes/js/tinymce/plugins/media/moxieplayer.swf',
-	'wp-includes/js/tinymce/skins/lightgray/fonts/readme.md',
+	'wp-includes/js/tinymce/skins/lightgray/fonts/README.md',
 	'wp-includes/js/tinymce/skins/lightgray/fonts/tinymce-small.json',
 	'wp-includes/js/tinymce/skins/lightgray/fonts/tinymce.json',
 	'wp-includes/js/tinymce/skins/lightgray/skin.ie7.min.css',
@@ -1098,7 +1098,7 @@ function update_core( $from, $to ) {
 	$roots  = array( '/wordpress/', '/wordpress-mu/' );
 
 	foreach ( $roots as $root ) {
-		if ( $wp_filesystem->exists( $from . $root . 'readme.html' )
+		if ( $wp_filesystem->exists( $from . $root . 'README.md' )
 			&& $wp_filesystem->exists( $from . $root . 'wp-includes/version.php' )
 		) {
 			$distro = $root;
